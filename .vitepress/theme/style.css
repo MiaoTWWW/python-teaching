@@ -7,3 +7,39 @@
 .vp-doc {
   max-width: 100% !important;
 }
+
+/* ── Mermaid 圖表文字不被裁切 ── */
+.mermaid-wrapper svg {
+  overflow: visible !important;
+}
+
+.mermaid-wrapper .node rect,
+.mermaid-wrapper .node circle,
+.mermaid-wrapper .node ellipse,
+.mermaid-wrapper .node polygon,
+.mermaid-wrapper .node path {
+  overflow: visible !important;
+}
+
+.mermaid-wrapper .label-container {
+  overflow: visible !important;
+}
+
+.mermaid-wrapper .label {
+  overflow: visible !important;
+}
+
+/* 確保 foreignObject 內的文字完整顯示 */
+.mermaid-wrapper foreignObject {
+  overflow: visible !important;
+}
+
+.mermaid-wrapper .node foreignObject div {
+  line-height: 1.4;
+  padding: 2px 0;
+}
+
+/* 菱形（決策節點）內的文字也補償 */
+.mermaid-wrapper .node .label p {
+  margin: 2px 0;
+}

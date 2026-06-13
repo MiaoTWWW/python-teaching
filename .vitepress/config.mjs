@@ -23,6 +23,12 @@ export default withMermaid({
       lineColor: '#9FB8CC',
       secondaryColor: '#D4C5A9',
       tertiaryColor: '#E8E4DF',
+    },
+    flowchart: {
+      padding: 20,
+      nodeSpacing: 60,
+      rankSpacing: 60,
+      htmlLabels: true,
     }
   },
   mermaidPlugin: {
