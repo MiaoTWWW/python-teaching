@@ -1,0 +1,9 @@
+/* ── 整體版面加寬 ── */
+:root {
+  --vp-layout-max-width: 1560px;
+}
+
+.content-container,
+.vp-doc {
+  max-width: 100% !important;
+}

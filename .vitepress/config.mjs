@@ -1,6 +1,7 @@
 import { defineConfig } from 'vitepress'
+import { withMermaid } from 'vitepress-plugin-mermaid'
 
-export default defineConfig({
+export default withMermaid({
   title: 'Python 教學講義',
   description: '從基礎到實戰的 Python 完整學習教材',
   lang: 'zh-TW',
@@ -12,6 +13,21 @@ export default defineConfig({
     ['link', { rel: 'icon', href: '/favicon.ico' }],
     ['meta', { name: 'theme-color', content: '#3776AB' }],
   ],
+
+  mermaid: {
+    theme: 'neutral',
+    themeVariables: {
+      primaryColor: '#7A9BB5',
+      primaryTextColor: '#fff',
+      primaryBorderColor: '#6B8BA4',
+      lineColor: '#9FB8CC',
+      secondaryColor: '#D4C5A9',
+      tertiaryColor: '#E8E4DF',
+    }
+  },
+  mermaidPlugin: {
+    class: 'mermaid-wrapper',
+  },
 
   themeConfig: {
     logo: '/python-logo.svg',
@@ -104,8 +120,7 @@ export default defineConfig({
     },
 
     footer: {
-      message: '以 VitePress 建置 — 專為 Python 教學設計',
-      copyright: 'MIT Licensed',
+      copyright: 'Copyright © 2026 ｜ D.S. Li',
     },
 
     search: {
