@@ -92,6 +92,9 @@ export default withMermaid({
             { text: '03 - 錯誤與例外處理', link: '/python/intermediate/03-錯誤處理' },
             { text: '04 - 檔案 I/O', link: '/python/intermediate/04-檔案IO' },
             { text: '05 - 迭代器與生成器', link: '/python/intermediate/05-迭代器與生成器' },
+            { text: '06 - 閉包（Closure）', link: '/python/intermediate/06-閉包' },
+            { text: '07 - 裝飾器（Decorator）', link: '/python/intermediate/07-裝飾器' },
+            { text: '08 - 關聯、組合與聚合', link: '/python/intermediate/08-關聯組合聚合' },
           ],
         },
         {
@@ -104,6 +107,8 @@ export default withMermaid({
             { text: '03 - Web API 開發', link: '/python/advanced/03-Web-API' },
             { text: '04 - 資料科學入門', link: '/python/advanced/04-資料科學入門' },
             { text: '05 - 自動化腳本', link: '/python/advanced/05-自動化腳本' },
+            { text: '06 - 執行緒與並行程式設計', link: '/python/advanced/06-執行緒' },
+            { text: '07 - ITS Python 認證準備', link: '/python/advanced/07-ITS認證考題' },
           ],
         },
         {
