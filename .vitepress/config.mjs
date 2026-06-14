@@ -118,11 +118,33 @@ export default withMermaid({
             { text: '範例總覽', link: '/python/examples/' },
           ],
         },
+        {
+          text: '🧠 演算法與資料結構',
+          collapsed: false,
+          items: [
+            { text: '章節介紹', link: '/python/algorithms/' },
+            { text: '01 - 程式設計基礎', link: '/python/algorithms/01-程式設計基礎' },
+            { text: '02 - 資料結構：雜湊表', link: '/python/algorithms/02-資料結構-雜湊表' },
+            { text: '03 - 搜尋法', link: '/python/algorithms/03-搜尋法' },
+            { text: '04 - 排序演算法', link: '/python/algorithms/04-排序演算法' },
+            { text: '05 - 佇列 (Queue)', link: '/python/algorithms/05-佇列' },
+            { text: '06 - 堆疊 (Stack)', link: '/python/algorithms/06-堆疊' },
+            { text: '07 - 排列組合', link: '/python/algorithms/07-排列組合' },
+            { text: '08 - 樹 (Tree)', link: '/python/algorithms/08-樹' },
+            { text: '09 - 進位轉換', link: '/python/algorithms/09-進位轉換' },
+            { text: '10 - 迷宮問題', link: '/python/algorithms/10-迷宮' },
+            { text: '11 - 遞迴 (Recursion)', link: '/python/algorithms/11-遞迴' },
+            { text: '12 - 圖形最短路徑', link: '/python/algorithms/12-最短路徑' },
+            { text: '13 - 動態規劃 (DP)', link: '/python/algorithms/13-動態規劃' },
+            { text: '14 - 進階模組', link: '/python/algorithms/14-進階模組' },
+            { text: '15 - 其他主題', link: '/python/algorithms/15-其他' },
+          ],
+        },
       ],
     },
 
     socialLinks: [
-      { icon: 'github', link: '#' },
+      { icon: 'github', link: 'https://github.com/MiaoTWWW/python-teaching' },
     ],
 
     editLink: {
