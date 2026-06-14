@@ -153,3 +153,63 @@
     min-width: 44px;
   }
 }
+
+/* ── 手機版：首頁 Hello World 縮小避免重疊 ── */
+@media (max-width: 768px) {
+  .custom-home .hello-world {
+    font-size: 3.5rem;
+    letter-spacing: 2px;
+    padding: 0.3em 0;
+  }
+
+  .custom-home {
+    padding-top: 12vh;
+    gap: 1.5rem;
+  }
+
+  .hint {
+    margin-top: -0.5rem;
+  }
+
+  .cards-row .card {
+    padding: 1.5rem 2rem;
+    min-width: 160px;
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .card .lang-click {
+    opacity: 0.8;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 480px) {
+  .custom-home .hello-world {
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+  }
+
+  .custom-home {
+    padding-top: 8vh;
+    gap: 0.8rem;
+  }
+
+  .cards-row {
+    gap: 1rem;
+  }
+
+  .cards-row .card {
+    padding: 1rem 1.5rem;
+    min-width: 120px;
+    max-width: 280px;
+  }
+
+  .card .lang-name {
+    font-size: 1.2rem;
+  }
+
+  .card .lang-desc {
+    font-size: 0.75rem;
+  }
+}
