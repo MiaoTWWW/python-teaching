@@ -272,19 +272,19 @@ hero:
   <p class="hint">− 選一個開始 −</p>
 
   <div class="cards-row">
-    <a href="/python/" class="card">
+    <a :href="withBase('/python/')" class="card">
       <span class="lang-icon">🐍</span>
       <span class="lang-name">Python</span>
       <span class="lang-desc">簡潔優雅・快速上手</span>
       <span class="lang-click">點我 →</span>
     </a>
-    <a href="/java/" class="card">
+    <a :href="withBase('/java/')" class="card">
       <span class="lang-icon">☕</span>
       <span class="lang-name">Java</span>
       <span class="lang-desc">嚴謹紮實・物件導向</span>
       <span class="lang-click">點我 →</span>
     </a>
-    <a href="/c/" class="card">
+    <a :href="withBase('/c/')" class="card">
       <span class="lang-icon">⚙️</span>
       <span class="lang-name">C 語言</span>
       <span class="lang-desc">貼近底層・掌握核心</span>
@@ -298,6 +298,7 @@ hero:
 
 <script setup>
 import { onMounted } from 'vue'
+import { withBase } from 'vitepress'
 
 let cleanup = null;
 
