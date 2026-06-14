@@ -17,16 +17,23 @@ C 語言由 Dennis Ritchie 於 1972 年在貝爾實驗室開發，至今仍是**
 
 ## 本課程內容
 
-### 基礎篇（6 章）
+### 基礎篇（13 章）
 
 | 章節 | 主題 | 核心內容 |
 |------|------|---------|
-| 01 | 環境安裝與設定 | GCC/MinGW、VS Code、Hello World、編譯與執行 |
-| 02 | 變數與資料型別 | int/float/double/char、sizeof、const、printf 格式 |
+| 01 | 環境安裝與設定 | GCC/MinGW、VS Code、Hello World、編譯與執行、註解 |
+| 02 | 變數與資料型別 | int/float/double/char、sizeof、const、printf/scanf 格式 |
 | 03 | 流程控制 | if/else、switch、for/while/do-while、break/continue |
 | 04 | 函式 | 函式定義、原型、傳值呼叫、作用域 |
 | 05 | 陣列與字串 | 一維/多維陣列、字元陣列、string.h |
 | 06 | 指標基礎 | `*`/`&`/NULL、指標算術、陣列與指標關係 |
+| 07 | 運算子進階 | 位元運算、複合指定、三元運算子、逗號運算子、優先順序 |
+| 08 | 進階指標 | 多層指標、函式指標、回傳指標、陣列指標 vs 指標陣列 |
+| 09 | 動態記憶體配置 | malloc/calloc/realloc/free、記憶體洩漏、懸空指標 |
+| 10 | 自訂資料型態 | struct/union/enum、typedef、位元欄位、對齊與填補 |
+| 11 | 檔案處理 | fopen/fclose、fprintf/fscanf、fread/fwrite、fseek/ftell |
+| 12 | 前置處理器與模組化 | #define 巨集、條件編譯、include guard、多檔案專案 |
+| 13 | 鏈結串列實作 | 節點結構、增刪改查、雙向鏈結串列、反轉與偵測環 |
 
 ## 學習路徑
 
@@ -37,15 +44,27 @@ flowchart LR
   C --> D[函式]
   D --> E[陣列與字串]
   E --> F[指標基礎]
-  F --> G[⚡ 進階主題敬請期待]
+  F --> G[運算子進階]
+  G --> H[進階指標]
+  H --> I[動態記憶體]
+  I --> J[自訂資料型態]
+  J --> K[檔案處理]
+  K --> L[前置處理器]
+  L --> M[鏈結串列]
   
   style A fill:#283593,color:#fff
   style B fill:#283593,color:#fff
   style C fill:#283593,color:#fff
   style D fill:#283593,color:#fff
   style E fill:#283593,color:#fff
-  style F fill:#5C6BC0,color:#fff
-  style G fill:#7986CB,color:#fff
+  style F fill:#3949AB,color:#fff
+  style G fill:#3949AB,color:#fff
+  style H fill:#3949AB,color:#fff
+  style I fill:#3949AB,color:#fff
+  style J fill:#3949AB,color:#fff
+  style K fill:#5C6BC0,color:#fff
+  style L fill:#5C6BC0,color:#fff
+  style M fill:#5C6BC0,color:#fff
 ```
 
 ## C 與 Python 的快速對照
