@@ -43,3 +43,113 @@
 .mermaid-wrapper .node .label p {
   margin: 2px 0;
 }
+
+/* ── 手機版：程式碼區塊橫向滑動 ── */
+@media (max-width: 768px) {
+  .vp-doc div[class*='language-'] {
+    max-width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .vp-doc div[class*='language-'] pre {
+    font-size: 12px;
+  }
+}
+
+/* ── 手機版：表格橫向捲動 ── */
+@media (max-width: 768px) {
+  .vp-doc table {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    word-break: normal;
+  }
+
+  .vp-doc th,
+  .vp-doc td {
+    white-space: nowrap;
+  }
+}
+
+/* ── 手機版：Mermaid 圖表縮放 ── */
+@media (max-width: 768px) {
+  .mermaid-wrapper {
+    max-width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .mermaid-wrapper svg {
+    max-width: none !important;
+    height: auto;
+  }
+}
+
+/* ── 手機版：版面與內容 ── */
+@media (max-width: 768px) {
+  :root {
+    --vp-layout-max-width: 100%;
+  }
+
+  .content-container {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+
+  .vp-doc {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  .vp-doc h1 { font-size: 1.5rem; }
+  .vp-doc h2 { font-size: 1.25rem; }
+  .vp-doc h3 { font-size: 1.1rem; }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* ── 手機版：更小螢幕微調 ── */
+@media (max-width: 480px) {
+  .content-container {
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+  }
+
+  .vp-doc {
+    font-size: 15px;
+  }
+
+  .vp-doc div[class*='language-'] pre {
+    font-size: 11px;
+  }
+}
+
+/* ── 手機版：側邊欄觸控優化 ── */
+@media (max-width: 768px) {
+  .VPSidebarItem .item .text {
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+  .VPSidebarItem .item {
+    min-height: 44px;
+  }
+
+  .VPSidebarItem .caret {
+    min-height: 44px;
+    min-width: 44px;
+  }
+}
+
+/* ── 手機版：導航選單觸控優化 ── */
+@media (max-width: 768px) {
+  .VPNavBarHamburger {
+    min-height: 44px;
+    min-width: 44px;
+  }
+}
