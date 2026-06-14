@@ -17,7 +17,7 @@ C 語言由 Dennis Ritchie 於 1972 年在貝爾實驗室開發，至今仍是**
 
 ## 本課程內容
 
-### 基礎篇（13 章）
+### 基礎篇（16 章）
 
 | 章節 | 主題 | 核心內容 |
 |------|------|---------|
@@ -34,6 +34,9 @@ C 語言由 Dennis Ritchie 於 1972 年在貝爾實驗室開發，至今仍是**
 | 11 | 檔案處理 | fopen/fclose、fprintf/fscanf、fread/fwrite、fseek/ftell |
 | 12 | 前置處理器與模組化 | #define 巨集、條件編譯、include guard、多檔案專案 |
 | 13 | 鏈結串列實作 | 節點結構、增刪改查、雙向鏈結串列、反轉與偵測環 |
+| 14 | 儲存類別與型別修飾詞 | static/extern/register、const/volatile/restrict、生命週期與連結 |
+| 15 | C99/C11 現代語法特性 | 複合字面常數、具名初始值、彈性陣列成員、_Generic、_Static_assert、匿名結構 |
+| 16 | goto、跨函式跳躍與可變參數 | goto 錯誤處理模式、setjmp/longjmp、va_list 可變參數函式 |
 
 ## 學習路徑
 
@@ -51,6 +54,9 @@ flowchart LR
   J --> K[檔案處理]
   K --> L[前置處理器]
   L --> M[鏈結串列]
+  M --> N[儲存類別]
+  N --> O[C99/C11]
+  O --> P[goto/跳躍/可變參數]
   
   style A fill:#283593,color:#fff
   style B fill:#283593,color:#fff
@@ -65,6 +71,9 @@ flowchart LR
   style K fill:#5C6BC0,color:#fff
   style L fill:#5C6BC0,color:#fff
   style M fill:#5C6BC0,color:#fff
+  style N fill:#7986CB,color:#fff
+  style O fill:#7986CB,color:#fff
+  style P fill:#7986CB,color:#fff
 ```
 
 ## C 與 Python 的快速對照
